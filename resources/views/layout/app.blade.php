@@ -9,6 +9,7 @@
 </head>
 <body>
 @yield('content')
+@yield('detail')
 </body>
 </html>
 

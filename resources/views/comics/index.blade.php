@@ -1,6 +1,6 @@
 @extends('layout.app')
 
-@section('title', 'Home')
+@section('title', 'comics')
 
 @section('content')
 
@@ -13,6 +13,8 @@
                 <th scope="col">Serie</th>
                 <th scope="col">Data di Uscita</th>
                 <th scope="col">Tipo</th>
+                <th scope="col">Dettagli</th>
+
             </tr>
         </thead>
         <tbody>
@@ -24,11 +26,14 @@
                     <td>{{ $comic->series }}</td>
                     <td>{{ $comic->sale_date }}</td>
                     <td>{{ $comic->type }}</td>
+                    <td><a href="{{ route ('comics.show', $comic->id)}}" class="btn btn-primary">Clicca qui</a></td>
+
 
                 </tr>
             @endforeach
         </tbody>
     </table>
-
+    <div>
+      </div>
 
 @endsection
