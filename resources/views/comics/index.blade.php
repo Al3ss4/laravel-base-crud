@@ -4,7 +4,7 @@
 
 @section('content')
 
-    @dump($comics)
+    {{-- @dump($comics) --}}
     <table class="table">
         <thead>
             <tr>
