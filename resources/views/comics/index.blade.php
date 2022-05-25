@@ -5,7 +5,8 @@
 @section('content')
 
     {{-- @dump($comics) --}}
-    <table class="table">
+    <div class="container">
+    <table class="table mt-5">
         <thead>
             <tr>
                 <th scope="col">Titolo</th>
@@ -33,7 +34,6 @@
             @endforeach
         </tbody>
     </table>
-    <div>
-      </div>
+</div>
 
 @endsection
