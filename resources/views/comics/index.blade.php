@@ -29,7 +29,8 @@
                         <td>{{ $comic->type }}</td>
                         <td>
                             <a href="{{ route('comics.show', $comic->id) }}" class="btn btn-primary">Visualizza</a>
-                            <a href="{{ route('comics.create', $comic->id) }}" class="btn btn-primary">Nuovo</a>
+                            <a href="{{ route('comics.create', $comic->id) }}" class="btn btn-primary">Nuovo</a> <a
+                                href="{{ route('comics.edit', $comic->id) }}" class="btn btn-primary">Modifica</a>
                         </td>
 
 
