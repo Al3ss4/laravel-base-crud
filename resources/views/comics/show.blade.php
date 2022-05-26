@@ -1,5 +1,5 @@
 @extends('layout.app')
-@section('title', 'comic')
+@section('title', $comic["title"])
 
 @section('detail')
 
