@@ -3,6 +3,7 @@
 
 @section('new')
     <div class="container">
+        <h1 class="text-center text-uppercase mt-5">crea nuovo fumetto</h1>
         <form action="{{ route('comics.store') }}" method='post'>
             @csrf
 
@@ -36,7 +37,7 @@
             </div>
 
 
-            <button type="submit" class="btn btn-primary">Invia</button>
+            <button type="submit" class="btn btn-primary">Aggiungi</button>
         </form>
     </div>
 @endsection

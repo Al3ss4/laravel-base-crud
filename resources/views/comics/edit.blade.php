@@ -14,8 +14,8 @@
                 <label for="titolo">Titolo</label>
             </div>
             <div class="form-floating mb-3">
-                <textarea type="text" class="form-control" name="description" value= {{ $comic->description }} placeholder="Description"
-                    id="floatingTextarea2" style="height: 250px"></textarea>
+                <input type="text" class="form-control" name="description" value= {{ $comic->description }} placeholder="Description"
+                    id="floatingTextarea2" style="height: 250px">
                 <label for="floatingTextarea2">Description</label>
             </div>
             <div class="form-floating mb-3">
@@ -45,7 +45,7 @@
             </div>
 
 
-            <button type="submit" class="btn btn-primary">Invia</button>
+            <button type="submit" class="btn btn-primary">Modifica</button>
         </form>
     </div>
 @endsection
