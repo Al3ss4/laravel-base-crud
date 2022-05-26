@@ -10,6 +10,8 @@
 <body>
 @yield('content')
 @yield('detail')
+@yield('new')
+@yield('edit')
 </body>
 </html>
 
