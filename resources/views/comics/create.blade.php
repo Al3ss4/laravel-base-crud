@@ -37,7 +37,7 @@
             </div>
 
 
-            <button type="submit" class="btn btn-primary">Aggiungi</button>
+            <button type="submit" class="btn btn-success">Aggiungi</button>
         </form>
     </div>
 @endsection

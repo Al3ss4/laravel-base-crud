@@ -45,7 +45,7 @@
             </div>
 
 
-            <button type="submit" class="btn btn-primary">Modifica</button>
+            <button type="submit" class="btn btn-warning">Modifica</button>
         </form>
     </div>
 @endsection
