@@ -25,5 +25,19 @@
                 </div>
             </div>
         </div>
+        <button type="button" class="btn btn-primary"><a href="{{ route ('comics.index')}}" class="link-light">Back </a></button>
+
+        <form action="{{ route('comics.destroy', $comic->id)}}" method='post'>
+            @csrf
+
+
+            @method('DELETE')
+
+
+
+        <button class="mt-5 btn btn-danger"type="submit">Cancella</button>
+        </form>
     </div>
+
+
 @endsection
