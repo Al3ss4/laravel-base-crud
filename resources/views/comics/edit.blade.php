@@ -46,6 +46,8 @@
 
 
             <button type="submit" class="btn btn-warning">Modifica</button>
+            <button type="button" class="btn btn-primary"><a href="{{ route('comics.index') }}" class="link-light" style="text-decoration: none">Annulla
+            </a></button>
         </form>
     </div>
 @endsection
