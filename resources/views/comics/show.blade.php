@@ -50,12 +50,12 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Stai per eliminare il fumetto!</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Stai per eliminare {{$comic->title}}!</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                Attenzione! Cliccando su Elimina eliminerai definitivamente il fumetto!!
+                                Attenzione! Cliccando su Elimina eliminerai definitivamente {{$comic->title}}!!
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>

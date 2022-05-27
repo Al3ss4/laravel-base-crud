@@ -32,48 +32,49 @@
                             <a href="{{ route('comics.create', $comic->id) }}" class="btn btn-success">Nuovo</a>
                             <a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-warning">Modifica</a>
 
-                            <form action="{{ route('comics.destroy', $comic) }}" method='post'>
-                                @csrf
 
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" onclick="deleteComic({{ $comic->id }})">
+                                Elimina
+                            </button>
 
-                                @method('DELETE')
-                                <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    Elimina
-                                </button>
-                                <!-- Modal -->
-                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Stai per eliminare il
-                                                    fumetto!</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                Attenzione! Cliccando su Elimina eliminerai definitivamente
-                                                {{ $comic->title }}!!
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary"
-                                                    data-bs-dismiss="modal">Annulla</button>
-                                                <button type="submit" class="btn btn-danger">Elimina</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
 
                         </td>
 
 
                     </tr>
                 @endforeach
+
             </tbody>
         </table>
+        <form action="" method='post'>
+            @csrf
+
+
+            @method('DELETE')
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Stai per eliminare il fumetto!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Attenzione! Cliccando su Elimina eliminerai definitivamente
+                           fumetto!!
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
+                            <button type="submit" class="btn btn-danger">Elimina</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
 
 @endsection

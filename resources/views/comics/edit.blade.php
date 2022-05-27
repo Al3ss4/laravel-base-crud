@@ -24,7 +24,7 @@
                 <label for="floatingPassword">Image</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="text" name="price" value="{{ $comic->price }}" class="form-control" id="floatingPassword"
+                <input type="number" name="price" step="any" value="{{ $comic->price }}" class="form-control" id="floatingPassword"
                     placeholder="Price">
                 <label for="floatingPassword">Price</label>
             </div>
@@ -34,7 +34,7 @@
                 <label for="floatingPassword">Series</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="text" name="sale_date" value="{{ $comic->sale_date }}" class="form-control"
+                <input type="date" name="sale_date" value="{{ $comic->sale_date }}" class="form-control"
                     id="floatingPassword" placeholder="Sale Date YYYY-MM-DD">
                 <label for="floatingPassword">Sale Date YYYY-MM-DD</label>
             </div>

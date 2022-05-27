@@ -20,7 +20,7 @@
                 <label for="floatingPassword">Image</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="text" name="price"  class="form-control" id="floatingPassword" placeholder="Price">
+                <input type="number" name="price" step="any"  class="form-control" id="floatingPassword" placeholder="Price">
                 <label for="floatingPassword">Price</label>
             </div>
             <div class="form-floating mb-3">
@@ -28,7 +28,7 @@
                 <label for="floatingPassword">Series</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="text" name="sale_date"  class="form-control" id="floatingPassword" placeholder="Sale Date YYYY-MM-DD">
+                <input type="date" name="sale_date"  class="form-control" id="floatingPassword" placeholder="Sale Date YYYY-MM-DD">
                 <label for="floatingPassword">Sale Date YYYY-MM-DD</label>
             </div>
             <div class="form-floating mb-3">
