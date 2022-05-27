@@ -11,13 +11,13 @@
             <div class="form-floating mb-3 mt-5">
                 <input type="text" name="title" value="{{ $comic->title }}" class="form-control" id="titolo"
                     placeholder="Titolo">
-                <label for="titolo">Titolo</label>
+                <label for="titolo">Title</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" name="description" value= {{ $comic->description }} placeholder="Description"
-                    id="floatingTextarea2" style="height: 250px">
-                <label for="floatingTextarea2">Description</label>
-            </div>
+
+               <textarea type="text" name="description" placeholder="Description" class="form-control" style="height: 150px">{{$comic->description}}</textarea>
+               <label for="floatingPassword">Description</label>
+           </div>
             <div class="form-floating mb-3">
                 <input type="text" name="thumb" value="{{ $comic->thumb }}" class="form-control" id="floatingPassword"
                     placeholder="Image">
